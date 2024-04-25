@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale. 0">
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <main>
+        <header class="main-title">
+            <h1>Temperature Converter</h1><hr>
+        </header>
+    
+        
+        <section class="main-section">
+            <!-- Section Introduction -->
+            <section>
+                <p>Masukkan suhu derajat Fahrenheit (&deg;F) ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Celsius (&deg;C).</p>
+            </section>
+    
+        <div class="fahrenheit">
+                <h3>Fahrenheit (&deg;F)</h3>
+            <article>
+                <input rows="1" id="input"></input>
+
+                <div class="btn">
+                    <button id="konversi" onclick="konversi">Konversi</button>
+                    <button id="reset" onclick="reset">Reset</button>
+                    <button id="reverse" onclick="location.href='index.html';">Reverse</button>
+                </div>
+            </article>
+        </div>
+
+        <div class="celsius">
+                <h3>Celsius (&deg;C)</h3>
+            <article>
+                <input rows="1" id="output"></input>
+            </article>
+        </div>
+
+        <div class="result">
+                <h3>Cara Kalkulasi</h3>
+            <article>
+                <input rows="1" id="kalkulasif"></input>
+            </article>
+        </div>
+
+        <div class="explanation">
+            <header>
+                <h3>Cara Konversi Dari Fahrenheit (&deg;F) ke Celsius (&deg;C)</h3>
+            </header>
+            <hr>
+    
+            <article>
+                <p>Suhu <i>S</i> dalam derajat Celsius (&deg;C) sama dengan suhu <i>S</i> dalam derajat Fahrenheit (&deg;F) kurang <b>32</b>, kali <b>5/9</b>.</p>
+                <h1 class="formula-s">S<sub>(&deg;C)</sub> = (<i>S</i><sub>(&deg;F)</sub> - <b>32</b>) &times; <b>5/9</b></p>
+            </article>
+        </div>
+    </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
